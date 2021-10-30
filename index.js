@@ -1,9 +1,13 @@
 // github api
 // octokit
 const { Octokit } = require('octokit')
+const core = require('@actions/core');
 
 // TODO auth
-const octokit = new Octokit({ auth: `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` });
+const token = core.getInput('token')
+const octokit = new Octokit(
+  { auth: token }
+);
 
 // octokit api create issue
 

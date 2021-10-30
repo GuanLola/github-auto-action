@@ -12,8 +12,8 @@ jobs:
       - name: create_issues_action
         uses: ./ # Uses an action in the root directory
         # id: hello
-        # with:
-        #   who-to-greet: 'Mona the Octocat'
+        with:
+          token: ${{ secrects.TOKEN }}"
       # Use the output from the `hello` step
       # - name: Get the output time
       #   run: echo "The time was ${{ steps.hello.outputs.time }}"

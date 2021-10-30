@@ -15,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@actions/core": "^1.6.0",
     "octokit": "^1.7.0"
   }
 }
